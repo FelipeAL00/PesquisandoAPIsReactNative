@@ -19,10 +19,19 @@ function Routes() {
         headerBackTitleVisible: false,
       }}
     >
-      <Stack.Screen name="Main" component={Main} options={{ title: 'Pesquisando APIs GitHub' }} />
-      <Stack.Screen name="User" component={User} />
+      <Stack.Screen
+        name="Main"
+        component={Main}
+        options={{ title: 'Pesquisando APIs GitHub'}}
+      />
+      <Stack.Screen
+        name="User"
+        component={User}
+        options={({ route }) => ({
+          title: route.params.user.name,
+        })}
+      />
     </Stack.Navigator>
   );
 }
-
 export default Routes;

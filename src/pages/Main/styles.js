@@ -1,9 +1,11 @@
 import styled from 'styled-components/native';
 import { RectButton } from 'react-native-gesture-handler';
 import { FlatList } from 'react-native';
+
 export const Container = styled.View`
   flex: 1;
   padding: 30px;
+  background: #fff;
 `;
 
 export const Form = styled.View`
@@ -49,7 +51,7 @@ export const Avatar = styled.Image`
   width: 64px;
   height: 64px;
   border-radius: 32px;
-  background: #eee;
+  background: #ddd;
 `;
 
 export const Name = styled.Text`
